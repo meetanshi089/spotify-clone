@@ -19,7 +19,7 @@ const Sidebar = () => {
             <img className="w-8" src={assets.stack_icon} />
             <p className="font-semibold">Your Library</p>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 cursor-pointer">
             <img className="w-5" src={assets.arrow_icon} alt="" />
             <img className="w-5" src={assets.plus_icon} alt="" />
           </div>
@@ -27,17 +27,23 @@ const Sidebar = () => {
         <div className="p-4 bg-[#242424] m-2 rounded font-semibold flex flex-col items-start justify-start gap-1 pl-4 ">
           <h1>Create your first playlist</h1>
           <p className="font-light">It's easy we'll help you</p>
-          <button className="px-4 py-1.5 bg-white text-[15px] text-black rounded-full mt-4">
+          <button className="px-4 py-1.5 bg-white text-[15px] text-black rounded-full mt-4 cursor-pointer">
             Create playlist
           </button>
         </div>
         <div className="p-4 bg-[#242424] m-2 rounded font-semibold flex flex-col items-start justify-start gap-1 pl-4 mt-4">
           <h1>Let's find some podcast to follow.</h1>
           <p className="font-light">We will keep you update on new episodes</p>
-          <button className="px-4 py-1.5 bg-white text-[15px] text-black rounded-full mt-4">
+          <button className="px-4 py-1.5 bg-white text-[15px] text-black rounded-full mt-4 cursor-pointer">
             Browse podcasts
           </button>
         </div>
+      </div>
+      <div className="flex items-center gap-2 mt-4">
+        <p className="bg-white text-black px-4 py-1 rounded-2xl cursor-pointer">
+          All
+        </p>
+        <p className="bg-black px-4py-1 rounded-2xl cursor-pointer">Music</p>
       </div>
     </div>
   );
