@@ -11,7 +11,7 @@ const DisplayHome = () => {
         <h1 className="my-5 font-bold text-2xl">Featured Charts</h1>
         <div className=" flex overflow-auto cursor-pointer ">
           {albumsData.map((item, index) => (
-            <SongItem
+            <AlbumItem
               key={index}
               name={item.name}
               desc={item.desc}
@@ -25,7 +25,7 @@ const DisplayHome = () => {
         <h1 className="my-5 font-bold text-2xl">Today's biggest hits</h1>
         <div className=" flex overflow-auto cursor-pointer ">
           {songsData.map((item, index) => (
-            <AlbumItem
+            <SongItem
               key={index}
               name={item.name}
               desc={item.desc}
